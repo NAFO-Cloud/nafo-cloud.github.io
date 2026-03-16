@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAFO Cloud</title>
+  <style>
+    :root {
+      --bg: #f4f8fc;
+      --card: #eef2f6;
+      --text: #17324a;
+      --muted: #5f758c;
+      --accent: #5ea7da;
+      --line: #d6e2ee;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 20px 72px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 28px 0 20px;
+    }
+
+    .logo {
+      width: 128px;
+      max-width: 32vw;
+      height: auto;
+      display: block;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(23, 50, 74, 0.08);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 14px auto 0;
+      max-width: 640px;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .intro {
+      margin: 28px auto 0;
+      max-width: 720px;
+      font-size: 1.06rem;
+      color: var(--muted);
+    }
+
+    .card {
+      margin-top: 40px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px 24px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.08rem;
+      letter-spacing: -0.02em;
+    }
+
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    .proverb {
+      margin-top: 18px;
+      padding-left: 16px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .closing {
+      margin-top: 34px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 40px 16px 56px;
+      }
+
+      .card {
+        padding: 22px 18px;
+      }
+
+      .subtitle {
+        font-size: 1.02rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="logo.png" alt="NAFO Cloud logo" class="logo" />
+      <h1>NAFO Cloud</h1>
+      <p class="subtitle">Exploring Responsible Human–AI Collaboration</p>
+      <p class="intro">
+        NAFO Cloud is an independent research initiative exploring how artificial intelligence can
+        collaborate safely and responsibly with human professionals. Our work focuses on the
+        intersection of AI systems, psychology, and decision-making in complex environments.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="acknowledgement-title">
+      <h2 id="acknowledgement-title">Acknowledgement</h2>
+      <p>
+        We express gratitude to the NAFO community whose resilience, humor, and civic creativity
+        helped protect morale in difficult times. Some signals begin as jokes and grow into serious work.
+      </p>
+      <div class="proverb">
+        <p><strong>Ukrainian proverb</strong></p>
+        <p>“Терпіння і праця все перетруть.”</p>
+        <p>Patience and work overcome everything.</p>
+      </div>
+    </section>
+
+    <p class="closing">
+      This page marks the beginning of a public archive of NAFO Cloud’s ongoing research and collaborations.
+    </p>
+  </main>
+</body>
+</html>
